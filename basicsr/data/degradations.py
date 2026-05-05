@@ -5,6 +5,12 @@ import random
 import torch
 from scipy import special
 from scipy.stats import multivariate_normal
+
+from torchvision.transforms import functional
+import sys
+
+sys.modules["torchvision.transforms.functional_tensor"] = functional
+
 from torchvision.transforms.functional import rgb_to_grayscale
 
 # -------------------------------------------------------------------- #
